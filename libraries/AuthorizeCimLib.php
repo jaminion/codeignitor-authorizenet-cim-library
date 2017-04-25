@@ -733,7 +733,7 @@ class AuthorizeCimLib
 		$this->_response = curl_exec($ch);
 		
 		// If there was an error. 
-		if(curl_exec($ch) === false)
+		if($this->_response === false)
 		{
 			$this->_success = FALSE;
 			$this->_error = TRUE;
